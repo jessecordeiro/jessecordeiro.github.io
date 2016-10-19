@@ -1,0 +1,25 @@
+.selfie { width: 250px; }
+
+.top-buffer { margin-top:2rem; }
+
+.right-buffer {margin-right:1rem;}
+
+.bottom-buffer {margin-bottom:1rem;}
+
+.border-bottom {
+	padding-bottom:15px;
+	border-bottom:1px solid #d3d3d3;
+}
+
+ul {
+
+    padding-left: 2rem;
+}
+
+a {
+    color: #758D2D;
+}
+
+a:hover, a:active {
+    color: #6F7E29;
+}
