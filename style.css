@@ -18,3 +18,7 @@ a {color: #758D2D;}
 a:hover, a:active {color: #6F7E29;}
 
 p::selection, li::selection, h1::selection, h3::selection, span::selection {background: #758D2D;}
+
+p, li {font-family: 'Roboto', sans-serif;}
+
+h1, h3 {font-family: 'Montserrat', sans-serif;}
