@@ -11,15 +11,10 @@
 	border-bottom:1px solid #d3d3d3;
 }
 
-ul {
+ul {padding-left: 2rem;}
 
-    padding-left: 2rem;
-}
+a {color: #758D2D;}
 
-a {
-    color: #758D2D;
-}
+a:hover, a:active {color: #6F7E29;}
 
-a:hover, a:active {
-    color: #6F7E29;
-}
+p::selection, li::selection, h1::selection, h3::selection, span::selection {background: #758D2D;}
