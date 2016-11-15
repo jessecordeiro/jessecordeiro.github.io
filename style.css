@@ -22,3 +22,16 @@ p::selection, li::selection, h1::selection, h3::selection, span::selection {back
 p, li {font-family: 'Roboto', sans-serif;}
 
 h1, h3 {font-family: 'Montserrat', sans-serif;}
+
+.content{
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 4s; /* Firefox < 16 */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+         -o-animation: fadein 4s; /* Opera < 12.1 */
+            animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
