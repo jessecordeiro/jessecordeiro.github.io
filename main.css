@@ -1,0 +1,124 @@
+.wrap {
+    height: 100%;
+    width: 100%;
+}
+.header-wrapper {
+	position: relative;
+    padding: 15px 20px 0px;
+    background: #FFF;
+    line-height: 1.65;
+}
+.title {
+    line-height: 1.5em;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    font-size: 1.5rem;
+	font-family: 'Raleway', sans-serif;
+}
+.title a{
+	color: #000;
+	text-decoration: none;
+	transition: opacity 0.25s ease-in-out;
+}
+.title a:hover{
+	opacity: .8;
+}
+.navbar {
+    margin: 20px 0 30px;
+    font-size: 13px;
+    text-align: center;
+}
+.navbar li {
+    margin-bottom: 20px;
+    margin-left: 30px;
+    display: inline-block;
+}
+.navbar li:first-child {
+    margin-left: 0;
+}
+.navbar li a{
+	color: #534f4f;
+	font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    transition: color 0.25s ease-in-out;
+    position: relative;
+}
+.navbar li a:hover{
+	color: #758D2D;
+}
+.navbar li a:hover:before{
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+.navbar li a:before{
+	content: "";
+	width: 100%;
+	height: 1px;
+	bottom: 0;
+	position: absolute;
+	background-color: #000;
+	transform: scaleX(0);
+	-webkit-transform: scaleX(0);
+	-webkit-transition: all 0.5s ease-in-out 0s;
+	transition: all 0.5s ease-in-out 0s;
+}
+.list-pages{
+    padding: 0;
+}
+.avatar{
+	border-radius: 50%;
+	width: 50%;
+	display: block;
+    margin: 0 auto;
+}
+.bio{
+	margin: 3rem 20px;
+	font-family: 'Raleway', sans-serif;
+	color: #534f4f;
+}
+.primaryTheme{
+	color: #758D2D;
+}
+@media only screen and (min-width: 770px){
+	.header-wrapper {
+	    padding: 30px 100px;
+	    overflow: hidden;
+	}
+	.navbar {
+	    float: right;
+	    text-align: right;
+	    margin: -0.6em 0 0 0;
+	}
+	.title {
+	    float: left;
+	    padding-right: 20px;
+	    max-width: 100%;
+	    text-align: left;
+		font-family: 'Raleway', sans-serif;
+	}
+	.avatar{
+		border-radius: 50%;
+		float: left;
+		margin:0px 60px 0px 100px;
+		width: 30%;
+	}
+	.bio{
+		margin: 10% 100px;
+		font-family: 'Raleway', sans-serif;
+	}
+}
+header, nav,  {
+    display: block;
+}
+section{
+	height: 50vh;
+}
+a {
+	text-decoration: none;
+}
+li a, li a:hover {color: #6F7E29}
+
+*::selection {background: #758D2D;}
+
+a::selection, p::selection {color: #333;}

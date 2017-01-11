@@ -1,83 +1,42 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Jesse Cordeiro</title>
-  <meta name="theme-color" content="#758D2D">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="I'm Jesse Cordeiro. Welcome to my personal website!">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
-  <!-- IE -->
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-  <!-- other browsers -->
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
-
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
-  <script>
-  // Google Analytics
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-85054451-2', 'auto');
-  ga('send', 'pageview');
-  </script>
-
+	<title>Jesse Cordeiro</title>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="theme-color" content="#758D2D">
+	<meta name="description" content="I'm Jesse Cordeiro. Welcome to my personal website!">
+    <link rel="stylesheet" href="main.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis|Quicksand" rel="stylesheet">
+	  <!-- IE -->
+  	<link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
+  	<!-- other browsers -->
+  	<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 </head>
-<body>
-  
-<div class="container top-buffer content">
-  <div class="row">
-    <img class="img-responsive img-circle selfie center-block" src="./assets/selfie.jpg">
-  </div>
-  <div class="text-center">
-    <h1>Jesse Cordeiro</h1>
-    <span class="badge">Computer Science Student</span>
-    <span class="badge">Software Developer</span>
-    <span class="badge">Full Stack</span>
-  </div>
-  <div class="text-center top-buffer bottom-buffer border-bottom">
-      <div class="row">
-        <a href="https://github.com/jessecordeiro/"><img src="./assets/icons/github.svg" class="right-buffer"></img></a>
-        <a href="https://twitter.com/JesseACordeiro"><img src="./assets/icons/twitter.svg" class="right-buffer"></img></a>
-        <a href="https://www.instagram.com/jesseacordeiro/"><img src="./assets/icons/instagram.svg" class="right-buffer"></img></a>
-        <a href="https://www.linkedin.com/in/jessecordeiro"><img src="./assets/icons/linkedin.svg" class="right-buffer"></img></a>
-        <a href="mailto:jesse.cordeiro@mail.utoronto.ca"><img src="./assets/icons/email.svg" class="right-buffer"></i></a>
-      </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-4">
-      <h3>A Brief Introduction</h3>
-      <p>I am currently pursuing a Bachelor of Science in Computer Science with a focus in artificial intelligence at the University of Toronto. I have been attending hackathons to build exciting projects and become familiar with new technologies. Currently seeking an internship opportunity for summer 2017.</p>
+<body class="page-home is_home lightbox-enabled">
+    <div class="wrap">
+        <header class="header-wrapper">
+            <div class="title">
+            	<a href>Jesse Cordeiro</a>
+            </div>
+            <nav id="navigation" class="navbar">
+                <ul id="pages-nav" class="list-pages">
+	                <li class=""><a href="jesse-cordeiro-resume.pdf">RESUME</a></li>
+	              	<li class=""><a href="https://github.com/jessecordeiro/">GITHUB</a></li>
+	                <li class=""><a href="https://www.linkedin.com/in/jessecordeiro">LINKEDIN</a></li>
+	                <li class=""><a href="http://jessecordeiro.com/mailto:jesse.cordeiro@mail.utoronto.ca" data-link-type="page-redirect"  target="_blank">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <img src="assets/selfie.jpg" class="avatar">
+    	<div class="bio">
+    		<p>I am currently pursuing a Bachelor of Science in Computer Science with a focus in artificial intelligence at the <a href="http://web.cs.toronto.edu/" class="primaryTheme">University of Toronto</a>. I have been attending hackathons to build exciting <a href="https://github.com/jessecordeiro/" class="primaryTheme">projects</a> - recently attended Hack the North (University of Waterloo) and Medhacks (Johns Hopkins University). Currently seeking an internship opportunity in software development for summer 2017.</p>
+    		<p>Formerly a software engineer intern at <a href="https://www.td.ca" class="primaryTheme">TD</a>.</p>
+    	</div>
     </div>
-    <div class="col-sm-4">
-      <h3>Work Experience</h3>
-      <ul>
-        <li>Software Engineer Intern - <a href="https://www.td.com">TD Canada</a></li>
-        <li>MSP - <a href="https://www.microsoft.com/">Microsoft Canada</a></li>
-        <li>Computer Science Peer Instructor - <a href="https://www.utoronto.ca/">University of Toronto</a></li>
-        <li>DCS Student Ambassador - <a href="https://www.utoronto.ca/">University of Toronto</a></li>
-        <li><a href="mailto:jesse.cordeiro@mail.utoronto.ca">Potential employer? Let's chat!</a></li>
-      </ul>
-    </div>
-    <div class="col-sm-4">
-      <h3>Recent Projects</h3>
-      <ul>
-        <li><a href="https://github.com/jessecordeiro/chatr-web-client">Chatr - Web Client</a></li>
-        <li><a href="https://github.com/jessecordeiro/PhotoRenamer">PhotoRenamer</a></li>
-        <li><a href="https://github.com/jessecordeiro/cat-facts">Cat Facts - Android Application</a></li>
-        <li><a href="https://github.com/jessecordeiro/Hexa">Hexa - JavaScript Library/Node.js API</a></li>
-        <li><a href="http://devpost.com/software/eve-your-personal-travel-assistant">EVE - Personal Travel Assistant</a></li>
-        <li>Many more to come! Stay tuned.</a></li>
-      </ul>
-    </div>
-  </div>
 </div>
-
 </body>
 </html>
-
