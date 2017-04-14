@@ -147,6 +147,7 @@ u {
     margin-bottom: 120px;
     left: 20px;
     top: 40px;
+    cursor: pointer;
 }
 .site-title a {
     position: fixed;

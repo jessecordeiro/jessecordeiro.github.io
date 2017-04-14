@@ -51,6 +51,12 @@ jQuery(document).ready(function($){
         }, 1000);
     });
 
+    $("#title-bar").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#title").offset().top
+        }, 1000);
+    });
+
 });
 
  
