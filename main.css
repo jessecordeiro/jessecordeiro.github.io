@@ -137,7 +137,7 @@ u {
 
 /*===== Titles =====*/
 .site-title {
-		font-family: 'Francois One', sans-serif;
+	font-family: 'Francois One', sans-serif;
     font-size: 26px;
     color: #90D4C5;
     line-height: 1.5em;
@@ -148,6 +148,12 @@ u {
     left: 20px;
     top: 40px;
     cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
 }
 .site-title a {
     position: fixed;
