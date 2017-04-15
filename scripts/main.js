@@ -1,5 +1,16 @@
 jQuery(document).ready(function($){
-	var isLateralNavAnimating = false;
+    var isLateralNavAnimating = false;
+    var isDisabled = 0;
+    
+    function toggleMobileScrolling() {
+        if (!isDisabled) {
+            $('body').bind('touchmove', function(e){e.preventDefault()})
+            isDisabled++;
+        }else{
+            $('body').unbind('touchmove')
+            isDisabled--;
+        }
+    }
 
     var f = $("body");
         setTimeout(function() {
@@ -15,6 +26,7 @@ jQuery(document).ready(function($){
 			
 			$('body').toggleClass('navigation-is-open');
             $('body').toggleClass('disable-scrolling');
+            toggleMobileScrolling();
 			$('.cd-navigation-wrapper').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
 				//animation is over
 				isLateralNavAnimating = false;
