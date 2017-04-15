@@ -40,7 +40,7 @@
         </svg>
     </a>
         
-    <div id="cd-nav" class="cd-nav">
+    <div id="cd-nav" class="cd-nav" style="z-index: 50;">
         <div class="cd-navigation-wrapper">
 
                 <nav>
@@ -54,18 +54,22 @@
                 </nav>
 
         </div>
+        <div id="drawer-particles" style="z-index: -100;">
+        </div>
     </div>
 
     <div class="site-title"><a id="title-bar">JESSE CORDEIRO</a></div>
 
     <div class="site-container">
-
+        
         <section id="title" class="cover">
             <span class="circular-book" id="main">Hi, I'm <strong>Jesse</strong></span>
-            <span class="arrow-nav">
+            <span class="arrow-nav" style="z-index: 20;">
                 <a id="title-arrow"><i class="fa fa-arrow-down" aria-hidden="true" style="color: black;"></i></a>
             </span>
         </section>
+        <div id="test">
+        </div>
 
         <section class="site-content">
 
@@ -105,8 +109,9 @@
         </section>
     </div>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>    
-  <script src="scripts/main.js"></script>  
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>     
+  <script src="scripts/main.js"></script>
 
 </body>
 </html>
