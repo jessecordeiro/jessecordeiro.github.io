@@ -14,6 +14,7 @@ jQuery(document).ready(function($){
 			if($(this).parents('.csstransitions').length > 0 ) isLateralNavAnimating = true; 
 			
 			$('body').toggleClass('navigation-is-open');
+            $('body').toggleClass('disable-scrolling');
 			$('.cd-navigation-wrapper').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
 				//animation is over
 				isLateralNavAnimating = false;

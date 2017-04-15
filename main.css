@@ -64,6 +64,11 @@ p,li {
     left: 0;
 }
 
+.disable-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
 #connect {
     color: white;
     font-size: 21px;
