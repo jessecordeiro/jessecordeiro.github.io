@@ -132,9 +132,7 @@ jQuery(document).ready(function($){
       "retina_detect": true
     }
 
-    particlesJS("drawer-particles", config);
-        particlesJS("test", config);
-
+    particlesJS("particles", config);
     
     $("#title-arrow").click(function() {
         $('html, body').animate({
