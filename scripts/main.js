@@ -155,17 +155,30 @@ jQuery(document).ready(function($){
 
     $("#uoft-arrow").click(function() {
         $('html, body').animate({
-            scrollTop: $("#loblaw-digital").offset().top
+            scrollTop: $("#mongodb").offset().top
         }, 1000);
     });
 
-    $("#company1-arrow").click(function() {
+    
+    $("#mongodb-arrow").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#teaching-assistant").offset().top
+      }, 1000);
+    });
+
+    $("#ta-arrow").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#loblaw-digital").offset().top
+      }, 1000);
+    });
+
+    $("#ld-arrow").click(function() {
         $('html, body').animate({
             scrollTop: $("#td").offset().top
         }, 1000);
     });
 
-    $("#company2-arrow").click(function() {
+    $("#td-arrow").click(function() {
         $('html, body').animate({
             scrollTop: $("#contact").offset().top
         }, 1000);
