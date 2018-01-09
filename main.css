@@ -27,7 +27,7 @@ body.loaded,
 .no-js body {
     opacity: 1;
 }
-div.loaded { opacity: 1; }
+span.loaded, div.loaded { opacity: 1 !important; }
 a, a:visited {
     color: #FFFFFF80;
     text-decoration: none;
@@ -76,12 +76,14 @@ p,li {
 }
 
 #main {
+    opacity: 0;
     z-index: 50;
     display: table-cell;
     font-size: 6vh;
     vertical-align: middle;
     width: 100%;
     text-align: center;
+    transition: opacity 0.50s ease-in 0.2s;    
 }
 
 #uoft {

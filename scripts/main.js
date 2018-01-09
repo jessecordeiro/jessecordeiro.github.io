@@ -3,36 +3,39 @@ jQuery(document).ready(function($){
     var isDisabled = 0;
     
     function toggleMobileScrolling() {
-        if (!isDisabled) {
-            $('body').bind('touchmove', function(e){e.preventDefault()})
-            isDisabled++;
-        }else{
-            $('body').unbind('touchmove')
-            isDisabled--;
-        }
+      if (!isDisabled) {
+          $('body').bind('touchmove', function(e){e.preventDefault()})
+          isDisabled++;
+      }else{
+          $('body').unbind('touchmove')
+          isDisabled--;
+      }
     }
 
-    var f = $("body");
-        setTimeout(function() {
-            f.addClass("loaded")
+    setTimeout(function() {
+      $("body").addClass("loaded")
     }, 250);
+
+    setTimeout(function() {
+      $("#main").addClass("loaded")     
+    }, 700);
 	
-	//open/close lateral navigation
-	$('.cd-nav-trigger').on('click', function(event){
-		event.preventDefault();
-		//stop if nav animation is running 
-		if( !isLateralNavAnimating ) {
-			if($(this).parents('.csstransitions').length > 0 ) isLateralNavAnimating = true; 
-			
-			$('body').toggleClass('navigation-is-open');
-            $('body').toggleClass('disable-scrolling');
-            toggleMobileScrolling();
-			$('.cd-navigation-wrapper').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
-				//animation is over
-				isLateralNavAnimating = false;
-			});
-		}
-	});
+    //open/close lateral navigation
+    $('.cd-nav-trigger').on('click', function(event){
+      event.preventDefault();
+      //stop if nav animation is running 
+      if( !isLateralNavAnimating ) {
+        if($(this).parents('.csstransitions').length > 0 ) isLateralNavAnimating = true; 
+        
+        $('body').toggleClass('navigation-is-open');
+              $('body').toggleClass('disable-scrolling');
+              toggleMobileScrolling();
+        $('.cd-navigation-wrapper').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
+          //animation is over
+          isLateralNavAnimating = false;
+        });
+      }
+    });
 
     var config = {
       "particles": {
