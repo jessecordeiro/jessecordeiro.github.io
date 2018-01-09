@@ -29,14 +29,14 @@ body.loaded,
 }
 div.loaded { opacity: 1; }
 a, a:visited {
-    color: #90D4C5;
+    color: #FFFFFF80;
     text-decoration: none;
     transition: color 0.1s ease-in-out;
 }
-a:hover, a:active {
+/* a:hover, a:active {
     color: #4ab19a;
     text-decoration: none;
-}
+} */
 p,li {
     font-weight: 400;
     font-size: 1.2rem;
@@ -89,6 +89,16 @@ p,li {
   	color: white;
 }
 
+#mongodb {
+    background-color: #009688;    
+    color: white;
+}
+
+#teaching-assistant {
+    background-color: #03A9F4;    
+    color: white;
+}
+
 #loblaw-digital {
     background-color: black;
     color: white;
@@ -104,17 +114,13 @@ p,li {
     background-color: #ff736b;
 }
 
-#contact p {
-	width: 0;
-}
-
 #contactIcons {
     position: absolute;
     display: inline-block;
     float: left;
     height: 4vh;
     top: 60vh;
-    left: 18vw;
+    left: 20vw;
     font-size: 30px;
 }
 
@@ -144,7 +150,7 @@ u {
 .arrow-nav {
     position: absolute;
     bottom: 5vh;
-    right: 6.5vh;
+    right: 9vh;
     width: 18px;
     font-size: 5vh;
     cursor: pointer;
@@ -174,12 +180,12 @@ u {
     position: fixed;
 }
 .site-title a,
-.site-title a:visited { color: #90D4C5; }
-.site-title a:hover,
+.site-title a:visited { color: #FFFFFF80; }
+/* .site-title a:hover,
 .site-title a:active {
     color: #90D4C5;
     opacity: 0.8;
-}
+} */
 
 /*=================================*/
 /* Navigation Styles
